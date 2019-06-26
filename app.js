@@ -21,7 +21,7 @@ function onReady(){
 
     // create a ability to delete item
     let deleteBtn = document.createElement('button');
-    deleteBtn.innerHTML = '<span>Delete</span>';;
+    deleteBtn.innerHTML = '<span>Delete</span>';
 
     // set the title
     newLi.textContent = title;
@@ -30,7 +30,7 @@ function onReady(){
     newLi.appendChild(checkbox);
 
     // attach the checkbox to the li
-    newLi.appendChild(minusBtn);
+    newLi.appendChild(deleteBtn);
 
     // attach the li to the ul
     toDoList.appendChild(newLi);
@@ -38,14 +38,11 @@ function onReady(){
     // empty the input value
     newToDoText.value = '';
 
-    // Add your delete function here!
-    let deleteBtn = document.createElement('button');
-    deleteBtn.textContent = "Delete";
 
     deleteBtn.addEventListener('click', function(event) {
       toDoList.removeChild(this.parentElement);
 
-  
+
     })
 
     console.log(title);
