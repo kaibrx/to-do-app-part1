@@ -1,4 +1,4 @@
-# to-do-app-part 1#
+# to-do-app-part 1 #
 This exercise introcuded me to DOM events. In this project I created a simple to do app where I: 
 
 > * Undertood DOM Events and how they enable interactive web pages and web apps
